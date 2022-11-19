@@ -1,0 +1,34 @@
+import java.util.*;
+class subpairs {
+    public static int ls(int a[],int k,n)
+    {
+        for(i=0;i<n;i++){
+            if(a[i]==k)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int i,j,l;
+        int k,m;
+       // int start;
+        //int end;
+        int a[]=new int[6];
+         int n=a.length;
+        for(l=0;l<n;l++){
+            a[l]=sc.nextInt();
+        }
+        System.out.print("enter the number to be searched:");
+        k=sc.nextInt();
+        m=ls(a,k,n);
+        if(m>0){
+           System.out.print("number found at",m);  
+        }
+        else{
+            System.out.print("number not found");   
+        }
+}
+}
